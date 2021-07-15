@@ -1,64 +1,43 @@
----
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-port: 4000
-host: 0.0.0.0
-safe: false
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
 
-
-### site serving configuration ###
-exclude: [CNAME, README.md, .gitignore]
-permalink: /:title ## disables post output
-timezone: null
-lsi: false
+# Build settings
 markdown: kramdown
-highlighter: rouge 
+theme: minima
+plugins:
+  - jekyll-feed
 
-
-### content configuration ###
-title: Bioinformatics Consulting for HMS
-keywords: bioinformatics, hms, tnt, consult
-description: Support in high-dimensional data management, analysis and dissemination for Harvard Medical School through the HSPH Bioinformatics Core
-#source_link:
-#favicon:
-#touch_icon:
-#google_analytics_key:
-
-
-### template colors, used site-wide via css ###
-colors:
-  black:
-    light: '#303030'
-    dark: '#111111'
-  white:
-    light: '#f5f5f5'
-    dark: '#f8f8f8'
-  blue:
-    light: '#3c9eec'
-    dark: '#49a7e9'
-  green:
-    light: '#a3d832'
-    dark: '#9bcf2f'
-  purple:
-    light: '#c869bf'
-    dark: '#c869bf'
-  orange:
-    light: '#faaf22'
-    dark: '#fab125'
-  turquoise:
-    light: '#0fbfcf'
-    dark: '#0fbfcf'
-  color1:
-    light: '#E3E1D3'
-    dark: '#DCBB7D'
-  color2:
-    light: '#B65558'
-    dark: '#8F4244'
-  color3:
-    light: '#828BA1'
-    dark: '#595F6D'
-  color4:
-    light: '#C8BFCA'
-    dark: '#9A8A98'
-  color5:
-    light: '#A1A1A1'
-    dark: '#757575'
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
